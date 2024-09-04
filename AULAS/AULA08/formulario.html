@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario</title>
+</head>
+<!--disabled desabilita a opçao/ hidden oculta a opçao-->
+
+<body>
+  <form action="#">
+
+    <fieldset>
+      <legend>Cadrastro do Cliente</legend>
+      <label for="nome">nome:</label>
+      <input type="text"><br><br>
+      <label for="email:">email:</label>
+      <input type="text">
+      <label for="contato:">contato:</label>
+      <input type="text">
+    </fieldset>
+    <br>
+    <fieldset>
+
+
+    <p>Listas de Carros:</p>
+    <select name="Listas de Carros" id="Listas de Carros">
+      <option disabled selected hidden>selecione</option>
+      <option value="evoque">evoque</option>
+      <option value="celta">celta</option>
+      <option value="jetta">jetta</option>
+      <option value="hb20">hb20</option>
+      <option value="mercedes gle">mercedes gle</option>
+    </select>
+   
+
+    <p>Região</p>
+    <input autocomplete="on" list="Região" placeholder="ex: São Paulo">
+    <datalist id="Região">
+      <option value="São Paulo"></option>
+      <option value="juquitiba"></option>
+      <option value="parana"></option>
+    </datalist>
+    <br><br>
+    <input type="range" name="ss" id="tst">
+    <br><br>
+    <label for="feedback">deixe seu feedback aqui:</label><br><br>
+    <textarea name="feedback" id="feedback" cols="30" rows="10" required placeholder="deixe seu feedback aqui"
+      maxlength="150" minlength="100"></textarea>
+      <input type="submit" value="enviar">
+  </form>
+  
+
+  </select>
+</body>
+
+</html>
